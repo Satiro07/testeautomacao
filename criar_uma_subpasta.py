@@ -5,7 +5,7 @@ desktop = r'C:\Users\José Satiro\OneDrive\Desktop'
 
 conteudo = input('Digite algo: ')
 
-arquivo_caminho = os.path.join(desktop, 'arquivo.py')
+arquivo_caminho = os.path.join(desktop, 'arquivo.txt')
 print(arquivo_caminho)
 
 
@@ -18,7 +18,7 @@ if os.path.exists(arquivo_caminho):
 
     arq_destino = os.path.join(pasta, 'Subpasta')
     
-    arq = os.path.join(arq_destino, 'arquivo.py')
+    arq = os.path.join(arq_destino, 'arquivo.txt')
     shutil.move(arquivo_caminho, arq)
     
     print('Deu certo')
